@@ -1,0 +1,115 @@
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente para el cuerpo de la página */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+}
+
+/* Estilos básicos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 0 20px; /* Espaciado interno del encabezado */
+    display: flex; /* Usa flexbox para la distribución */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia el contenido entre el logo y los íconos de navegación */
+    position: relative; /* Para posicionar los íconos correctamente */
+}
+
+/* Estilos para el logo */
+.logo img {
+    height: 50px; /* Altura del logo (más grande) */
+    margin-right: 20px; /* Espacio a la derecha del logo */
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex; /* Usa flexbox para la distribución */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex: 1; /* Permite que la navegación use el espacio disponible */
+}
+
+/* Contenedor único para categorías y búsqueda con bordes redondeados */
+.contenedor-categorias-buscador {
+    display: flex; /* Usa flexbox para la distribución de categorías y búsqueda */
+    align-items: center; /* Alinea verticalmente el contenido */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #444; /* Color de fondo */
+    overflow: hidden; /* Asegura que el contenido no sobresalga del contenedor redondeado */
+    flex: 1; /* Permite que el contenedor use el espacio disponible */
+    max-width: 800px; /* Ancho máximo para la barra de búsqueda */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilos para el contenedor de categorías y búsqueda dentro del contenedor principal */
+.contenedor-buscador-categorias {
+    display: flex; /* Usa flexbox para la distribución horizontal */
+    gap: 10px; /* Espacio entre el contenedor de categorías y el de búsqueda */
+    width: 100%; /* Ajusta el ancho del contenedor de categorías y búsqueda al 100% del contenedor principal */
+}
+
+/* Estilos para el desplegable de categorías */
+.contenedor-categorias select {
+    background-color: #444; /* Color de fondo del desplegable */
+    color: #fff; /* Color del texto en el desplegable */
+    border: none; /* Elimina el borde por defecto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño del texto */
+    flex: 1; /* Permite que el desplegable use el espacio disponible */
+}
+
+/* Estilos para el campo de búsqueda */
+#buscador {
+    padding: 15px; /* Aumenta el espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    border: none; /* Elimina el borde por defecto */
+    width: 100%; /* Ajusta el ancho del campo de búsqueda al contenedor */
+    max-width: none; /* Elimina el ancho máximo específico para el campo de búsqueda */
+    font-size: 1em; /* Tamaño del texto */
+    flex: 2; /* Permite que el campo de búsqueda use más espacio en el contenedor */
+}
+
+/* Estilos para los botones de navegación */
+.nav-items {
+    display: flex; /* Usa flexbox para la distribución de los elementos de navegación */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    align-items: center; /* Centra verticalmente los elementos de navegación */
+}
+
+/* Alineación de los elementos de navegación */
+.nav-item {
+    margin-left: 20px; /* Espacio a la izquierda de cada botón */
+    display: flex; /* Usa flexbox para alinear los elementos dentro del nav-item */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilos para los íconos dentro de los botones */
+button i {
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+
+/* Estilos para el total del carrito */
+#total-carrito {
+    background-color: #f00; /* Fondo rojo para el total del carrito */
+    color: #fff; /* Color del texto en el total del carrito */
+    padding: 3px 6px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    font-size: 0.9em; /* Tamaño de texto pequeño */
+}
+
+/* Estilos para íconos (puedes usar FontAwesome u otro sistema de íconos) */
+.icon-corazon::before {
+    content: '\2764'; /* Código Unicode para el corazón */
+    color: red; /* Color del corazón en rojo */
+}
+
+.icon-usuario::before {
+    content: '\263A'; /* Código Unicode para el ícono de usuario */
+}
+
+.icon-carrito::before {
+    content: '\1F6D2'; /* Código Unicode para el ícono del carrito de compras */
+}

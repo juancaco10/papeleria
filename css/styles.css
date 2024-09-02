@@ -1,0 +1,191 @@
+/* Estilo general para el fondo oscuro */
+.fondo-oscuro {
+    background-color: #033E8C; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Ajuste del grupo de búsqueda y categorías */
+.categoria-busqueda {
+    max-width: 800px; /* Ancho máximo del grupo de entrada */
+    margin: 0 auto; /* Centra el grupo de búsqueda y categorías */
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    border-radius: 30px; /* Bordes redondeados para todo el grupo */
+    overflow: hidden; /* Asegura que los bordes redondeados afecten a todos los elementos dentro del grupo */
+}
+
+/* Estilos para el selector de categorías */
+.selector-categorias {
+    margin-right: -1px; /* Permite que el borde se una con el campo de búsqueda */
+    flex-shrink: 0; /* Evita que el selector de categorías se reduzca de tamaño */
+    width: 150px;
+    padding: 10px;
+    background-color: #c2baba;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el selector */
+}
+
+/* Estilos para el campo de búsqueda */
+.campo-busqueda {
+    height: auto; /* Asegura que el campo tenga la misma altura que el selector */
+    flex-grow: 1; /* Permite que el campo de búsqueda ocupe el resto del espacio disponible */
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+}
+
+/* Estilos generales para los botones */
+.btn-dark {
+    background-color: #f7f4f4;
+    border: none; /* Elimina el borde */
+    display: flex; /* Alinea el contenido en línea */
+    align-items: center; /* Centra verticalmente los elementos dentro del botón */
+    font-size: 1.2em; /* Agranda el texto y el ícono */
+    margin: 0 5px; /* Reduce la separación entre los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Ajustes generales de márgenes y padding para el header y otros elementos */
+header, .input-group, .nav-item, .logo img {
+    padding-left: 5px; /* Reduce el padding interno a la izquierda */
+    padding-right: 5px; /* Reduce el padding interno a la derecha */
+}
+
+/* Ajusta la separación entre los elementos de navegación */
+.nav-item {
+    margin-left: 5px; /* Reduce el espacio entre los botones de navegación */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los ítems de navegación */
+}
+
+/* Ajuste del margen de la barra de navegación */
+.nav {
+    margin-right: 5px; /* Ajusta el margen del contenedor de la barra de navegación */
+}
+
+
+/* Estilo para el logo */
+.logo img {
+   
+    height: 55px; /* Ajusta el tamaño del logo */
+    margin-left: 50px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    border-radius: 19px; /* Bordes redondeados */
+    transition: box-shadow 0.1s ease-in-out; /* Añade una transición suave para el efecto de sobreado */
+}
+
+/* Estilo para el logo cuando el mouse pasa sobre él */
+.logo img:hover {
+    background-color:#F2B705;
+      
+}
+
+
+/* Estilo para el ícono de favoritos */
+.favoritos-icono {
+    position: relative; /* Permite el posicionamiento relativo del número */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    font-size: 2em; /* Tamaño del ícono */
+    color: rgb(104, 10, 10); /* Color del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    margin-top: 10px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilo para el ícono de favoritos cuando el mouse pasa sobre él */
+.favoritos-icono:hover {
+    color: rgb(255, 0, 0); /* Rojo intenso al pasar el mouse */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+
+
+/* Estilo para el número de favoritos */
+#contador-favoritos {
+    position: absolute; /* Posiciona el número en el centro del ícono */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición del número */
+    color: rgb(255, 255, 255); /* Color del número */
+    border-radius: 50%; /* Bordes redondeados para el número */
+    padding: 3px 6px; /* Espaciado interno del número */
+    font-size: 0.5em; /* Tamaño de texto del número */
+    display: flex; /* Centra el número en el contenedor */
+    align-items: center; /* Centra verticalmente el texto */
+    justify-content: center; /* Centra horizontalmente el texto */
+}
+
+/* Estilo para el botón de usuario */
+#usuario {
+    background-color:#F2B705; /* Mismo color de fondo que el contenedor */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Elimina el borde del botón */
+    display: flex; /* Alinea el contenido en línea */
+    align-items: center; /* Centra verticalmente los elementos dentro del botón */
+    font-size: 1.2em; /* Tamaño de texto y el ícono */
+    padding: 10px 15px; /* Añade espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 34px; /* Bordes redondeados para el botón */
+    transition: background-color 0.1s ease-in-out; /* Transición suave para el cambio de color */
+    
+}
+
+/* Estilo para el botón de usuario cuando el mouse pasa sobre él */
+#usuario:hover {
+    background-color:#F28705;
+    color: #fff; /* Mantiene el color del texto blanco */
+   }
+
+/* Estilo para el ícono de usuario */
+#usuario i {
+    margin-right: 5px; /* Añade un poco de espacio entre el ícono y el texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono de usuario */
+    margin-right: 35px; /* Añade un poco de espacio entre el ícono y el texto */
+}
+
+
+/* Estilo para el botón de carrito */
+#carrito {
+    background-color: #F2B705; /* Mismo color de fondo que el contenedor */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Elimina el borde del botón */
+    display: flex; /* Alinea el contenido en línea */
+    align-items: center; /* Centra verticalmente los elementos dentro del botón */
+    font-size: 1.2em; /* Tamaño de texto y el ícono */
+    
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 34px; /* Bordes redondeados para el botón */
+    transition: background-color 0.1s ease-in-out; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el botón de carrito cuando el mouse pasa sobre él */
+#carrito:hover {
+    background-color: #F28705; /* Color celeste al pasar el mouse */
+    color: #fff; /* Mantiene el color del texto blanco */
+}
+
+/* Estilo para el ícono del carrito */
+#carrito i {
+    margin-right: 10px; /* Espacio entre el ícono y el contador de ítems */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono del carrito */
+}
+
+/* Estilo para el contador de ítems */
+#contador-items {
+  
+    color: #fff; /* Color del texto en el contador */
+    border-radius: 20px; /* Bordes redondeados para el contador */
+
+    font-size: 1.2em; /* Tamaño de texto del contador */
+    display: inline-flex; /* Alinea el contador en línea */
+    align-items: center; /* Centra verticalmente el texto */
+    justify-content: center; /* Centra horizontalmente el texto */
+    margin-right: 10px; /* Espacio entre el contador y el total del carrito */
+}
+
+/* Estilo para el total del carrito */
+#total-carrito {
+   
+    color: #fff; /* Color del texto en el total del carrito */
+   
+    border-radius: 12px; /* Bordes redondeados */
+    font-size: 1.1em; /* Tamaño de texto más grande */
+}
